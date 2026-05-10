@@ -8,14 +8,14 @@ export default function BackgroundLayer({ isEventStarted }: BackgroundLayerProps
   return (
     <div className="absolute inset-0 w-full h-full z-0">
       <div 
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out"
+        className="absolute inset-0 w-full h-full bg-cover portrait:bg-contain portrait:bg-top bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out"
         style={{
           backgroundImage: 'url(/assets/background-before.PNG)',
           opacity: isEventStarted ? 0 : 1,
         }}
       />
       <div 
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out"
+        className="absolute inset-0 w-full h-full bg-cover portrait:bg-contain portrait:bg-top bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out"
         style={{
           backgroundImage: 'url(/assets/background-after.PNG)',
           opacity: isEventStarted ? 1 : 0,

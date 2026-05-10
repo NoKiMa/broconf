@@ -3,4 +3,3 @@
 export const EVENT_DATE = '2026-05-11T17:00:00';
 export const EVENT_DATE_END = '2026-05-13T15:00:00';  
 export const EVENT_DATE_NOW = '2027-05-11T15:00:00';
- 
